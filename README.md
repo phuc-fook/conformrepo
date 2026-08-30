@@ -1,5 +1,5 @@
 # ConformRepo
-
+[![test](https://github.com/phuc-fook/conformrepo/actions/workflows/test.yml/badge.svg?branch=main&event=push)](https://github.com/phuc-fook/conformrepo/actions/workflows/test.yml)
 ConformRepo validates configured repository structure, structured metadata and schemas, and file/reference integrity through a deterministic read-only workflow. It is an alpha, pre-1.0 command-line project for specification-heavy and AI-assisted repositories.
 
 ## The problem
