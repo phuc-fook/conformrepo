@@ -1,0 +1,8 @@
+fixture_id: F12
+expected_discovered_paths: [specs/a-note.md, specs/overview.md, specs/sensor.yaml, specs/z-note.md]
+expected_findings:
+  - {check_id: reference, code: REFERENCE_TARGET_MISSING, severity: error, discovered_path: specs/overview.md, message: "Reference target does not exist: specs/Sensor.yaml", details: {raw_target: ./Sensor.yaml, normalized_target: specs/Sensor.yaml, resolution_mode: document-relative}}
+forbidden_finding_codes: [REQUIRED_PATH_MISSING]
+expected_outcome: CONFORMANCE_FAIL
+comparison_critical_result_equal_for_orders: true
+path_policy: {separator: /, case_sensitive: true, absolute_host_path_absent: true, timestamp_absent: true}

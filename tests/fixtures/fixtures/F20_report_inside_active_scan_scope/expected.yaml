@@ -1,0 +1,8 @@
+fixture_id: F20
+expected_discovered_paths: []
+expected_findings:
+  - {check_id: configuration, code: UNSAFE_REPORT_DESTINATION, severity: error, message: "Report destination is inside the effective scan set.", details: {destination: specs/audit.json}}
+expected_outcome: CONFIGURATION_ERROR_OR_UNSAFE_OUTPUT_DESTINATION
+repository_scan_started: false
+report_can_become_input: "MUST_BE_PREVENTED"
+ngr02_verdict: PASS

@@ -1,0 +1,7 @@
+fixture_id: F02
+expected_discovered_paths: [specs/overview.md]
+expected_findings:
+  - {check_id: required-path, code: REQUIRED_PATH_MISSING, severity: error, message: "Required path does not exist: specs/controller.json", details: {required_path: specs/controller.json}}
+forbidden_finding_codes: [INPUT_PARSE_ERROR]
+expected_outcome: CONFORMANCE_FAIL
+independence_note: "The finding requires no document parsing; overview remains discoverable."

@@ -1,0 +1,6 @@
+configuration_version: "0.1"
+repository: {root: repo, include_roots: [specs], exclude_roots: [], suffixes: [.md]}
+required_paths: [specs/controller.json]
+severity_mapping: {REQUIRED_PATH_MISSING: error}
+report: {destination: stdout, format: json}
+exit_policy: {fail_on: [error]}

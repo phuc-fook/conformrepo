@@ -1,0 +1,6 @@
+fixture_id: F10
+expected_discovered_paths: [specs/overview.md]
+expected_findings:
+  - {check_id: reference, code: REFERENCE_ESCAPES_ROOT, severity: error, discovered_path: specs/overview.md, message: "Reference target escapes repository root.", details: {raw_target: ../../../outside.txt, resolution_mode: document-relative}}
+forbidden_operations: [read_outside_repository_root]
+expected_outcome: CONFORMANCE_FAIL

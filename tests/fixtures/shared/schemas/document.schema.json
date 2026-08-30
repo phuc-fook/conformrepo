@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","type":"object","required":["title","kind"],"properties":{"title":{"type":"string","minLength":1},"kind":{"enum":["overview","note","glossary"]},"source_path":{"type":"string"}},"additionalProperties":true}

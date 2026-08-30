@@ -1,0 +1,6 @@
+fixture_id: F05
+expected_discovered_paths: [specs/overview.md]
+expected_findings:
+  - {check_id: schema, code: INPUT_PARSE_ERROR, severity: error, discovered_path: specs/overview.md, message: "Could not parse Markdown frontmatter."}
+forbidden_details: [invented_metadata, metadata_as_location]
+expected_outcome: CONFORMANCE_FAIL

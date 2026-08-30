@@ -1,0 +1,6 @@
+configuration_version: "0.1"
+repository: {root: repo, include_roots: [specs, archive], exclude_roots: [archive], suffixes: [.md, .yaml]}
+schema_bindings: [{id: sensor, select: "**/*.yaml", schema: ../../shared/schemas/sensor.schema.json}]
+reference_bindings: [{id: markdown-links, select: "**/*.md", extractor: markdown-link, relative_mode: document-relative}]
+report: {destination: stdout, format: json}
+exit_policy: {fail_on: [error]}

@@ -1,0 +1,4 @@
+configuration_version: "0.1"
+repository: {root: repo, include_roots: [specs], exclude_roots: [], suffixes: [.md, .json]}
+report: {destination: specs/audit.json, format: json}
+exit_policy: {fail_on: [error]}

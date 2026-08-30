@@ -1,0 +1,7 @@
+fixture_id: F06
+expected_discovered_paths: [specs/sensor.yaml]
+expected_findings:
+  - {check_id: schema, code: SCHEMA_VALIDATION_FAILED, severity: error, discovered_path: specs/sensor.yaml, message: "Document does not satisfy schema: sensor", details: {schema_id: sensor, keyword: required, missing_property: model}}
+forbidden_finding_codes: [INPUT_PARSE_ERROR]
+expected_outcome: CONFORMANCE_FAIL
+mutation_expected: false

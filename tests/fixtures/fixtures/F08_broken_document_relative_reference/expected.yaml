@@ -1,0 +1,6 @@
+fixture_id: F08
+expected_discovered_paths: [specs/overview.md]
+expected_findings:
+  - {check_id: reference, code: REFERENCE_TARGET_MISSING, severity: error, discovered_path: specs/overview.md, message: "Reference target does not exist: specs/missing.yaml", details: {raw_target: ./sub/../missing.yaml, normalized_target: specs/missing.yaml, resolution_mode: document-relative}}
+expected_outcome: CONFORMANCE_FAIL
+path_policy: "Valid contained '..' is normalized before the missing-target check."

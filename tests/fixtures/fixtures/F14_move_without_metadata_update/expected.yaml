@@ -1,0 +1,8 @@
+fixture_id: F14
+states:
+  - {root: state-before, expected_discovered_paths: [docs/a/item.md], expected_findings: [], expected_outcome: PASS}
+  - {root: state-after, expected_discovered_paths: [docs/b/item.md], expected_findings: [], expected_outcome: PASS}
+byte_invariant: "state-before/docs/a/item.md and state-after/docs/b/item.md must have identical SHA-256."
+declared_path_value: docs/a/item.md
+forbidden_behaviors: [relocate_from_metadata, rename_from_metadata, implicit_self_path_finding, metadata_repair]
+ngr01_verdict: PASS

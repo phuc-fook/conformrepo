@@ -1,0 +1,10 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": ["model", "sample_rate_hz"],
+  "properties": {
+    "model": {"type": "string", "minLength": 1},
+    "sample_rate_hz": {"type": "integer", "minimum": 1}
+  },
+  "additionalProperties": false
+}

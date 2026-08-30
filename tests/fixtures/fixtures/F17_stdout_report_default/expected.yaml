@@ -1,0 +1,7 @@
+fixture_id: F17
+expected_discovered_paths: [specs/overview.md]
+expected_findings: []
+expected_outcome: PASS
+report_destination_verdict: SAFE_STDOUT_DEFAULT
+repository_input_unchanged: true
+ngr02_verdict: PASS

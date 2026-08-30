@@ -1,0 +1,23 @@
+configuration_version: "0.1"
+repository:
+  root: .
+  include_roots: [specs]
+  exclude_roots: [reports]
+  suffixes: [.md, .yaml, .json]
+  case_policy: lexical-sensitive
+  symlink_policy: do-not-follow
+required_paths: [specs/overview.md, specs/sensor.yaml]
+schema_bindings:
+  - id: sensor
+    select: specs/sensor.yaml
+    schema: schemas/sensor.schema.json
+reference_bindings:
+  - id: markdown-links
+    select: "**/*.md"
+    extractor: markdown-link
+    relative_mode: by-syntax
+report:
+  destination: stdout
+  format: json
+exit_policy:
+  fail_on: [error]

@@ -1,0 +1,5 @@
+configuration_version: "0.1"
+repository: {root: repo, include_roots: [specs, references], exclude_roots: [], suffixes: [.md]}
+reference_bindings: [{id: markdown-links, select: "**/*.md", extractor: markdown-link, relative_mode: by-leading-slash}]
+report: {destination: stdout, format: json}
+exit_policy: {fail_on: [error]}

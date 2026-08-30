@@ -1,0 +1,11 @@
+configuration_version: "0.1"
+repository: {root: repo, include_roots: [specs, references], exclude_roots: [archive, generated, sandbox], suffixes: [.md, .yaml, .json], case_policy: lexical-sensitive, symlink_policy: do-not-follow}
+required_paths: [project.yaml, specs/overview.md, specs/sensor.yaml, specs/controller.json, references/glossary.md]
+schema_bindings:
+  - {id: document, select: "**/*.md#frontmatter", schema: ../../shared/schemas/document.schema.json}
+  - {id: sensor, select: specs/sensor.yaml, schema: ../../shared/schemas/sensor.schema.json}
+  - {id: controller, select: specs/controller.json, schema: ../../shared/schemas/controller.schema.json}
+reference_bindings:
+  - {id: markdown-links, select: "**/*.md", extractor: markdown-link, relative_mode: by-syntax}
+report: {destination: stdout, format: json}
+exit_policy: {fail_on: [error]}

@@ -1,0 +1,6 @@
+fixture_id: F07
+expected_discovered_paths: [specs/overview.md, specs/sensor.yaml]
+expected_reference_resolutions: [{source: specs/overview.md, raw_target: ./sensor.yaml, normalized_target: specs/sensor.yaml, exists: true}]
+expected_findings: []
+forbidden_finding_codes: [REFERENCE_TARGET_MISSING]
+expected_outcome: PASS

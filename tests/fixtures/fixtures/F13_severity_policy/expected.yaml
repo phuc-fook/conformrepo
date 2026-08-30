@@ -1,0 +1,6 @@
+fixture_id: F13
+finding_identity_except_severity: {check_id: required-path, code: REQUIRED_PATH_MISSING, message: "Required path does not exist: specs/controller.json", details: {required_path: specs/controller.json}}
+variants:
+  - {config: config-warning.yaml, severity: warning, expected_outcome: PASS}
+  - {config: config-error.yaml, severity: error, expected_outcome: CONFORMANCE_FAIL}
+expected_discovered_paths: [specs/overview.md]

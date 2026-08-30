@@ -1,0 +1,6 @@
+fixture_id: F01
+expected_discovered_paths: [references/glossary.md, specs/controller.json, specs/overview.md, specs/sensor.yaml]
+expected_findings: []
+forbidden_finding_codes: [REQUIRED_PATH_MISSING, INPUT_PARSE_ERROR, SCHEMA_VALIDATION_FAILED, REFERENCE_TARGET_MISSING, REFERENCE_ESCAPES_ROOT, UNSAFE_REPORT_DESTINATION]
+expected_outcome: PASS
+determinism: {paths_use_slash: true, absolute_root_absent: true, timestamp_absent: true}

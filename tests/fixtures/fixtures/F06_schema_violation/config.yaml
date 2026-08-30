@@ -1,0 +1,5 @@
+configuration_version: "0.1"
+repository: {root: repo, include_roots: [specs], exclude_roots: [], suffixes: [.yaml]}
+schema_bindings: [{id: sensor, select: specs/sensor.yaml, schema: ../../shared/schemas/sensor.schema.json}]
+report: {destination: stdout, format: json}
+exit_policy: {fail_on: [error]}

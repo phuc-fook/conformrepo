@@ -1,0 +1,5 @@
+configuration_version: "0.1"
+repository: {root: repo, include_roots: [specs], exclude_roots: [], suffixes: [.md]}
+schema_bindings: [{id: document, select: "**/*.md#frontmatter", schema: ../../shared/schemas/document.schema.json}]
+report: {destination: stdout, format: json}
+exit_policy: {fail_on: [error]}

@@ -1,0 +1,8 @@
+fixture_id: F11
+expected_discovered_paths: [specs/overview.md]
+expected_findings: []
+forbidden_findings:
+  - {code: INPUT_PARSE_ERROR, discovered_path: archive/broken.yaml}
+  - {code: REFERENCE_TARGET_MISSING, discovered_path: archive/old.md}
+expected_outcome: PASS
+exclusion_note: "archive is excluded only because configuration says so; no lifecycle meaning is inferred."

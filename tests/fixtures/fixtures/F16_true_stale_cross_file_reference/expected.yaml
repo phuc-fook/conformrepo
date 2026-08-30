@@ -1,0 +1,9 @@
+fixture_id: F16
+expected_discovered_paths: [docs/b/item.md, docs/index.md]
+expected_findings:
+  - {check_id: reference, code: REFERENCE_TARGET_MISSING, severity: error, discovered_path: docs/index.md, message: "Reference target does not exist: docs/a/item.md", details: {raw_target: a/item.md, normalized_target: docs/a/item.md, resolution_mode: document-relative}}
+forbidden_findings:
+  - {discovered_path: docs/b/item.md, reason: stale_self_path_metadata}
+expected_outcome: CONFORMANCE_FAIL
+invariant: "SELF_LOCATION_FRESHNESS != REFERENCE_FRESHNESS"
+ngr01_verdict: PASS

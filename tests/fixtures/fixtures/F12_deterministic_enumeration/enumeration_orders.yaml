@@ -1,0 +1,8 @@
+order_a: [specs/z-note.md, specs/sensor.yaml, specs/overview.md, specs/a-note.md]
+order_b: [specs/a-note.md, specs/overview.md, specs/sensor.yaml, specs/z-note.md]
+required_path_input: 'specs\sensor.yaml'
+required_path_normalized: specs/sensor.yaml
+valid_dot_reference: ./nested/../sensor.yaml
+valid_dot_reference_normalized: specs/sensor.yaml
+case_distinct_reference: ./Sensor.yaml
+case_distinct_normalized: specs/Sensor.yaml

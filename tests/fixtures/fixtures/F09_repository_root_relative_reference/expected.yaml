@@ -1,0 +1,5 @@
+fixture_id: F09
+expected_discovered_paths: [references/glossary.md, specs/overview.md]
+expected_reference_resolutions: [{source: specs/overview.md, raw_target: /references/glossary.md, normalized_target: references/glossary.md, resolution_mode: repository-root-relative, exists: true}]
+expected_findings: []
+expected_outcome: PASS

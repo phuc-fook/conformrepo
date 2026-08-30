@@ -1,0 +1,7 @@
+fixture_id: F15
+expected_discovered_paths: [docs/b/item.md]
+declared_path_value: docs/a/item.md
+expected_findings: []
+forbidden_findings: [implicit_self_location_mismatch]
+expected_outcome: PASS
+ngr01_verdict: PASS

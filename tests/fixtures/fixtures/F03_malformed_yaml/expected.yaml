@@ -1,0 +1,7 @@
+fixture_id: F03
+expected_discovered_paths: [specs/controller.json, specs/sensor.yaml]
+expected_findings:
+  - {check_id: schema, code: INPUT_PARSE_ERROR, severity: error, discovered_path: specs/sensor.yaml, message: "Could not parse YAML input."}
+forbidden_findings:
+  - {code: INPUT_PARSE_ERROR, discovered_path: specs/controller.json}
+expected_outcome: CONFORMANCE_FAIL

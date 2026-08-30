@@ -1,0 +1,7 @@
+fixture_id: F19
+expected_discovered_paths: [specs/overview.md]
+expected_findings: []
+expected_outcome: PASS
+report_destination_verdict: SAFE_INSIDE_EXPLICIT_EXCLUSION
+report_can_become_input: false
+ngr02_verdict: PASS
