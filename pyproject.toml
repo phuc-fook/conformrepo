@@ -21,6 +21,10 @@ classifiers = [
   "Topic :: Software Development :: Quality Assurance",
 ]
 
+[project.urls]
+Repository = "https://github.com/phuc-fook/conformrepo"
+Issues = "https://github.com/phuc-fook/conformrepo/issues"
+
 [project.scripts]
 conformrepo = "conformrepo.cli:main"
 
