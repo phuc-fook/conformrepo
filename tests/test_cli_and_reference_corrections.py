@@ -73,7 +73,7 @@ class UnsafeDestinationCliTests(unittest.TestCase):
                 include_roots=["specs", "reports"],
                 exclude_roots=["reports"],
             )
-            symlink_ancestor = root / "repo/reports"
+            symlink_ancestor = (root / "repo/reports").resolve(strict=False)
             with patch.object(Path, "is_symlink", autospec=True, side_effect=lambda path: path == symlink_ancestor):
                 self.assert_cli_rejection(config, root / "repo/reports/audit.json")
 
